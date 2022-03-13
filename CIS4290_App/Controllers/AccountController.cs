@@ -42,7 +42,7 @@ namespace CIS4290_App.Controllers
                 return View(userModel);
             }
 
-            var user = _mapper.Map<User>(userModel);
+            var user = _mapper.Map<User>(userModel); // associating what users entered in form to the userModel
 
             // CreateAsync method validates the password related errors
             var result = await _userManager.CreateAsync(user, userModel.Password);

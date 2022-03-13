@@ -32,13 +32,12 @@ namespace CIS4290_App
                 opts.UseSqlServer(Configuration.GetConnectionString("sqlConnection")));
 
             services.AddIdentity<User, IdentityRole>(opt =>
-            {
-                opt.Password.RequiredLength = 7;
-                opt.Password.RequireDigit = false;
-                opt.Password.RequireUppercase = false;
-
-                opt.User.RequireUniqueEmail = true;
-            })
+                {
+                    opt.User.RequireUniqueEmail = true;
+                    opt.Password.RequiredLength = 6;
+                    opt.Password.RequireUppercase = true;
+                    opt.Password.RequireDigit = true;
+                })
              .AddEntityFrameworkStores<ApplicationContext>();
 
 			services.AddAutoMapper(typeof(Startup));
@@ -56,7 +55,7 @@ namespace CIS4290_App
             else
             {
                 app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+                // The default HSTS value is 30 days 
                 app.UseHsts();
             }
             app.UseHttpsRedirection();

@@ -16,7 +16,5 @@ namespace CIS4290_App.Models
 
             
         }
-
-        public DbSet<Employee> Employees { get; set; }
     }
 }

@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
-using IdentityByExamples.Models;
+using CIS4290_App.Models;
 
-namespace IdentityByExamples
+namespace CIS4290_App
 {
     public class MappingProfile : Profile
     {

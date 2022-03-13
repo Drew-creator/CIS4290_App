@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace IdentityByExamples.Models
+namespace CIS4290_App.Models
 {
     public class ApplicationContext : IdentityDbContext<User>
     {

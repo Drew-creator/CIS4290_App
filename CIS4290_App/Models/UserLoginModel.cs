@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace IdentityByExamples.Models
+namespace CIS4290_App.Models
 {
     public class UserLoginModel
     {
@@ -16,3 +16,5 @@ namespace IdentityByExamples.Models
         public bool RememberMe { get; set; }
     }
 }
+
+

@@ -1,10 +1,10 @@
-﻿using IdentityByExamples.Models;
+﻿using CIS4290_App.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
 
-namespace IdentityByExamples.Extensions
+namespace CIS4290_App.Extensions
 {
     public static class MigrationManager
     {

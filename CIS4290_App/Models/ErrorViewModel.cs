@@ -1,6 +1,6 @@
 using System;
 
-namespace IdentityByExamples.Models
+namespace CIS4290_App.Models
 {
     public class ErrorViewModel
     {

@@ -5,11 +5,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using IdentityByExamples.Models;
+using CIS4290_App.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authorization;
 
-namespace IdentityByExamples.Controllers
+namespace CIS4290_App.Controllers
 {
     public class HomeController : Controller
     {
